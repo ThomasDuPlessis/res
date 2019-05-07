@@ -23,8 +23,8 @@
   \centerline{\huge{#1}}
 }
 
-\newcommand{\shortcontact}[3]{
-  \centerline{#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3}
+\newcommand{\shortcontact}[4]{
+  \centerline{#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3 {\large\textperiodcentered} #4}
 }
 
 \newcommand{\contact}[5]{
