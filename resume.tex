@@ -1,5 +1,5 @@
 \documentclass[5pt]{resume}
-\usepackage[margin=0.35in]{geometry} % for changing margins
+\usepackage[margin=1.0in]{geometry} % for changing margins
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
@@ -12,9 +12,9 @@
 % \oddsidemargin=0.0in
 % \evensidemargin=0.0in 
 % \textwidth=7.25in 
-% \marginparwidth=0.5in
+% \marginparwidth=1.0in
 \headheight=0pt 
-\headsep=0pt
+\headsep=1pt
 \textheight=11.0in
 
 \pagenumbering{gobble} % remove page numbers
@@ -28,30 +28,43 @@
 
 
 {\color{titleColor}\section{Skills}}
-\noindent\textbf{Best Languages:} {\color{default} \verb!C++!, Java, Go }\\
-\textbf{Other Languages:} {\color{default} Haskell, C, Python, shell, JavaScript, TypeScript} \\
+\noindent\textbf{Best Languages:} {\color{default} \verb!C++!, Python, Java, Go }\\
+\textbf{Other Languages:} {\color{default} Haskell, C, Python, shell, JavaScript, TypeScript, Kotlin} \\
 \textbf{Technologies:} {\color{default} MapReduce, Flume, SQL, Git, Linux, \LaTeX } 
 
 {\color{titleColor} \section{Work Experience}}
 
 \subsection{\textbf{Software Engineer - L4, Google \hfill June 2017-present}}
-{\color{default} Google Maps data infrastructure, Geo-Feeds: developing 
-  distributed pipelines to process third party (and internal) data into google 
-  maps. Allows clients to access google maps infrastucture to match their data 
-  to internal data, obtain statistics on the quality of their data, and splice
-  their data before submitting to the map.
-  Worked on all parts of system:
-  \begin{itemize}
-	\itemsep0em 
-  	\item optimizing core parts of the infrastructure.
-	\item migrating our storage and data model to a finer grained graph database solution based on Knowledge Graph
-	\item implementing API's that internal teams can use to access their processed data.
-  	\item creating a highly configurable alerting system visibile from our UI that allowed clients to make their own filters.
-\end{itemize}
+{\textbf{The Ordering app} \hfill Sep 2019-Present
+\\
+\color{default} 
+  \noindent the.ordering.app was a startup acquired by google. I
+  was the first full time engineer to join to work full stack on new
+  features on their legacy AWS stack as well as help migrate to google's
+  infrastructure.  My work included backend work to build out integrations
+  with POS systems, two android apps: one for a POS platform and another
+  as a standalone app, and a web frontend self serve onboarding flow
+  for merchants.
+
+  \noindent My work helped grow our merchant base over 5x what it was when it was purchased.
+  \noindent Worked in Python, Kotlin, Java, and Typescript.
 }
+\\
+\\
+{\textbf{Google Maps data infrastructure, Geo-Feeds}\hfill June 2017-Sep 2019,
+\\
+  \color{default} 
+  \noindent developing distributed ETF data pipelines to process third
+  party (and internal) data into google maps, APIs for clients to access
+  processed data, and a fraemwork to customize the pipeline itself based
+  on an SQL filtering language. Worked exclusively in C++
+
+  }
 
 \subsection{\textbf{Software Engineering intern, Google \hfill Summer 2016}}
-{\color{default} Google Maps data infrastructure, Geo-Feeds. Created a new stats collection process that informed clients which of their data matched to what data in the production database.}
+{\color{default} Google Maps data infrastructure, Geo-Feeds. Created a
+  new stats collection process that informed clients which of their
+  data matched to what data in the production database.}
 
 \subsection{\textbf{Summer Technology Analyst, Citi \hfill Summer 2015}} 
 {\color{default} Worked on team developing a front office
@@ -74,22 +87,14 @@
 \textbf{GPA}: {\color{default} 3.59} 
 \textbf{Awards}: {\color{default}Dean’s List, University Scholars program, Presidential Scholarship}
 
+{\color{titleColor}\section{Open Source Projects}}
+\subsection{\textbf{r - an rss reader for acme}}
+{\color{default} An rss reader, written in Go for Acme, the Plan9 Text Editor} 
 
-{\color{titleColor}\section{Projects/Open Source Contributions}}
-\subsection{\textbf{Visual SLAM Robotics Implementation (course project)}}
-{\color{default} Final project for graduate Computer Vision course on a team of two. We
-implemented a version of the SLAM algorithm for a real robot based off the
-paper: \href{
-  ''http://www.robots.ox.ac.uk/~cmei/articles/AConstantTimeEfficientStereoSLAMSystem_rss_09.pdf''}{A
-  Constant Time Stereo Slam} which details an efficient method to localize and
-map a robot's environment through live a video feed using \verb!C++! and OpenCV (Code
-located on github).}
-\subsection{\textbf{\href{''https://github.com/senny/emacs-eclim''}{Emacs-Eclim}}}
-{\color{default} Contributed to the open source project “Emacs-Eclim”
-  which provides an interface for emacs to use Eclim, a backend code completion
-  and project manager backend for text editors, using Eclipse. I added support for scala in the project }
-\subsection{\textbf{Friend Finder Android App}} 
-{\color{default} Mhacks 2013 project where we built an android app that
-  would point in the direction of another connected android.}
-\\
+\subsection{\textbf{emacs-eclim}\hfill (Contributer)}
+{\color{default} 
+  provides an interface for emacs to use Eclim, a backend code completion
+ and project manager backend for text editors, using Eclipse. I added support for scala in the project }
+
+
 \end{document}
